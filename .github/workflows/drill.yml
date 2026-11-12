@@ -1,0 +1,1 @@
+<name: CI Drill\n\non:\n  push:\n  workflow_dispatch:\n\njobs:\n  stuck-build-sim:\n    runs-on: ubuntu-latest\n    steps:\n      - name: Simulate stuck build (sleep 600s = 10 minutes)\n        run: sleep 600\n
